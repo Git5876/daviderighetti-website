@@ -264,3 +264,40 @@ input:focus,textarea:focus{border-color: rgba(132,168,255,.42)}
   .hero{padding:74px 0 52px}
   .hero__title{font-size:32px}
 }
+/* subtle grain for premium feel */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.045;
+  mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+.section{
+  position:relative;
+  overflow:hidden;
+}
+
+.section .aurora{
+  position:absolute;
+  inset:-180px -220px auto -220px;
+  height:380px;
+  pointer-events:none;
+  filter: blur(26px);
+  opacity:.55;
+}
+
+.section .aurora--cool{
+  background:
+    radial-gradient(240px 180px at 18% 55%, rgba(132,168,255,.14), transparent 72%),
+    radial-gradient(260px 200px at 52% 35%, rgba(172,132,255,.12), transparent 72%),
+    radial-gradient(220px 160px at 82% 62%, rgba(90,230,255,.09), transparent 72%);
+}
+
+.section .aurora--warm{
+  background:
+    radial-gradient(240px 180px at 20% 55%, rgba(255,140,90,.09), transparent 72%),
+    radial-gradient(260px 200px at 55% 35%, rgba(255,90,190,.08), transparent 72%),
+    radial-gradient(220px 160px at 84% 62%, rgba(120,255,210,.07), transparent 72%);
+}
