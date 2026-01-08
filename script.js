@@ -1,28 +1,29 @@
 (() => {
-  // Mobile menu
-  const btn = document.getElementById("menuBtn");
-  const menu = document.getElementById("menu");
+  // Year
+  const year = document.getElementById("year");
+  if (year) year.textContent = String(new Date().getFullYear());
+
+  // Mobile menu (only relevant on small screens)
+  const burger = document.getElementById("burger");
+  const mobileMenu = document.getElementById("mobileMenu");
 
   const setOpen = (open) => {
-    btn?.setAttribute("aria-expanded", String(open));
-    menu?.setAttribute("aria-hidden", String(!open));
-    menu?.classList.toggle("is-open", open);
+    if (!burger || !mobileMenu) return;
+    burger.setAttribute("aria-expanded", String(open));
+    mobileMenu.setAttribute("aria-hidden", String(!open));
+    mobileMenu.classList.toggle("is-open", open);
   };
 
-  btn?.addEventListener("click", () => {
-    const isOpen = btn.getAttribute("aria-expanded") === "true";
+  burger?.addEventListener("click", () => {
+    const isOpen = burger.getAttribute("aria-expanded") === "true";
     setOpen(!isOpen);
   });
 
-  menu?.addEventListener("click", (e) => {
+  mobileMenu?.addEventListener("click", (e) => {
     const a = e.target.closest("a");
     if (!a) return;
     setOpen(false);
   });
-
-  // Year
-  const year = document.getElementById("year");
-  if (year) year.textContent = String(new Date().getFullYear());
 
   // Soft reveal on scroll
   const els = Array.from(document.querySelectorAll(".reveal"));
@@ -36,6 +37,5 @@
     },
     { threshold: 0.12, rootMargin: "0px 0px -10% 0px" }
   );
-
   els.forEach((el) => io.observe(el));
 })();
