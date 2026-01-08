@@ -1,32 +1,32 @@
 (() => {
-  // Year
-  const year = document.getElementById("year");
-  if (year) year.textContent = String(new Date().getFullYear());
+  // year
+  const y = document.getElementById("year");
+  if (y) y.textContent = String(new Date().getFullYear());
 
-  // Mobile menu (only relevant on small screens)
+  // mobile menu
   const burger = document.getElementById("burger");
-  const mobileMenu = document.getElementById("mobileMenu");
+  const mobile = document.getElementById("mobile");
 
   const setOpen = (open) => {
-    if (!burger || !mobileMenu) return;
+    if (!burger || !mobile) return;
     burger.setAttribute("aria-expanded", String(open));
-    mobileMenu.setAttribute("aria-hidden", String(!open));
-    mobileMenu.classList.toggle("is-open", open);
+    mobile.setAttribute("aria-hidden", String(!open));
+    mobile.classList.toggle("is-open", open);
   };
 
   burger?.addEventListener("click", () => {
-    const isOpen = burger.getAttribute("aria-expanded") === "true";
-    setOpen(!isOpen);
+    const open = burger.getAttribute("aria-expanded") === "true";
+    setOpen(!open);
   });
 
-  mobileMenu?.addEventListener("click", (e) => {
+  mobile?.addEventListener("click", (e) => {
     const a = e.target.closest("a");
     if (!a) return;
     setOpen(false);
   });
 
-  // Soft reveal on scroll
-  const els = Array.from(document.querySelectorAll(".reveal"));
+  // soft reveal
+  const els = [...document.querySelectorAll(".reveal")];
   const io = new IntersectionObserver(
     (entries) => {
       for (const en of entries) {
