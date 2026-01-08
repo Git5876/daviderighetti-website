@@ -1,9 +1,312 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Davide Righetti</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Davide Righetti — Digital Marketing & Strategic Analysis</title>
+    <meta
+      name="description"
+      content="Davide Righetti — Digital Marketing & Strategic Analysis. Bridging data, strategy, and execution in modern digital marketing ecosystems."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    Site coming soon
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          Davide Righetti
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#methodology">Methodology</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__cta" href="#contact">Contact</a>
+        </nav>
+
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile" id="mobile" aria-hidden="true">
+        <div class="container mobile__inner">
+          <a class="mobile__link" href="#services">Services</a>
+          <a class="mobile__link" href="#methodology">Methodology</a>
+          <a class="mobile__link" href="#about">About</a>
+          <a class="mobile__cta" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="hero__nebula" aria-hidden="true"></div>
+
+        <div class="container hero__inner">
+          <h1 class="hero__title">
+            Data-Driven Insights for<br />
+            <span class="hero__accent">Digital Marketing</span><br />
+            Excellence
+          </h1>
+
+          <p class="hero__subtitle">
+            Activity support and KPI monitoring, tracking, and analysis.
+            <br />
+            Specialized in influencer marketing, Meta advertising, and affiliate programs.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Get Started</a>
+            <a class="btn btn--ghost" href="#services">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">What I Do</h2>
+            <p class="section__lead">
+              Structured digital marketing and strategic support, combining analytical rigor with creative execution.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <div class="icon" aria-hidden="true">▮▮▮</div>
+              <h3>KPI Definition & Monitoring</h3>
+              <p>
+                Strategic identification and continuous tracking of key performance indicators tailored to your business
+                objectives. Real-time dashboards and comprehensive reporting.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">◴</div>
+              <h3>Performance & KPI Analysis</h3>
+              <p>
+                Definition, monitoring, and interpretation of performance indicators across digital channels.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">◎</div>
+              <h3>Copywriting & Communication</h3>
+              <p>
+                Strategic messaging, content structure, and communication design aligned with brand and objectives.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">▣</div>
+              <h3>Paid Media & Growth Channels</h3>
+              <p>
+                Meta advertising, affiliate programs, and performance-driven campaign management.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">◈</div>
+              <h3>Corporate & Technology Consulting</h3>
+              <p>
+                Experience working within complex corporate environments, bridging technology, data, and marketing decision-making.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Methodology -->
+      <section class="section section--tight" id="methodology">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">How I Work</h2>
+            <p class="section__lead">A structured, analytical approach inspired by engineering and consulting methodologies.</p>
+          </div>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step__n">01</div>
+              <div>
+                <h3>Context & Objectives</h3>
+                <p>Understanding business goals, market dynamics, and strategic constraints.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step__n">02</div>
+              <div>
+                <h3>Analysis & Design</h3>
+                <p>Data analysis, KPI definition, and structured solution design.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step__n">03</div>
+              <div>
+                <h3>Execution & Optimization</h3>
+                <p>Implementation, monitoring, and continuous performance improvement.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pill-grid" aria-label="Value pillars">
+            <div class="pill">
+              <h4>Real-Time Data</h4>
+              <p>Instant access to performance metrics with automated reporting and alerting systems.</p>
+            </div>
+            <div class="pill">
+              <h4>Strategic Focus</h4>
+              <p>Not just data collection—strategic analysis and actionable insights that drive business growth.</p>
+            </div>
+            <div class="pill">
+              <h4>Operational Clarity</h4>
+              <p>Structured processes to reduce noise and keep marketing initiatives aligned with measurable outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container about">
+          <div class="about__media" aria-hidden="true">
+            <div class="avatar">
+              <div class="avatar__inner">⌁</div>
+            </div>
+          </div>
+
+          <div class="about__text">
+            <h2 class="section__title">About Me</h2>
+
+            <p>
+              Hi! I'm <strong>Davide Righetti</strong>, a digital marketing analyst holding a Master’s degree in
+              <strong>Management Engineering</strong> from <strong>Politecnico di Milano</strong>, with a specialization
+              in <strong>Digital Business and Market Innovation</strong>.
+            </p>
+
+            <p>
+              After an initial professional experience as a <strong>Technology Consulting Analyst at Accenture S.p.A.</strong>,
+              one of the world’s leading consulting firms, I decided to fully apply both my corporate and academic background
+              <strong>to</strong> a real-world, high-impact environment. This choice led me to focus entirely on
+              <strong>digital marketing</strong>, continuing the same strategic and analytical stream developed during my academic path.
+            </p>
+
+            <p>
+              Over the years, I have worked across multiple areas of digital and marketing operations, including
+              <strong>data analysis and cloud infrastructure (AWS Certified)</strong>, <strong>copywriting and communication</strong>,
+              <strong>social media strategy</strong>, <strong>Meta advertising</strong>, <strong>affiliate programs</strong>,
+              <strong>talent campaigns</strong>, and <strong>content creation</strong>. Alongside execution, my work has consistently involved
+              <strong>performance KPI definition</strong>, <strong>market and competitive analysis</strong>, <strong>design thinking</strong>,
+              and <strong>offer positioning</strong>.
+            </p>
+
+            <p>
+              Having studied — and later applied professionally — digital business models at a time when these disciplines were still emerging,
+              allowed me to build <strong>practical experience early</strong>, translating theory into execution and delivering
+              <strong>measurable results</strong> in both marketing performance and strategic analysis.
+            </p>
+
+            <div class="list">
+              <h3 class="list__title">Areas of Expertise</h3>
+              <ul>
+                <li>Digital Marketing Strategy</li>
+                <li>Performance & KPI Frameworks</li>
+                <li>Data Analysis & Reporting</li>
+                <li>Copywriting, Messaging Strategy & Content Creation</li>
+                <li>Meta Advertising (Facebook & Instagram)</li>
+                <li>Affiliate Program Management</li>
+                <li>Market & Competitive Analysis</li>
+                <li>Design Thinking & Offer Creation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Get in Touch</h2>
+            <p class="section__lead">
+              If you’d like to discuss a project, explore a collaboration, or simply exchange perspectives on digital marketing and strategy, feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact">
+            <!-- FORM: replace action with your Formspree endpoint -->
+            <form class="form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+              <label>
+                <span>Name *</span>
+                <input name="name" type="text" required />
+              </label>
+
+              <label>
+                <span>Email *</span>
+                <input name="email" type="email" required />
+              </label>
+
+              <label>
+                <span>Message *</span>
+                <textarea name="message" rows="6" required></textarea>
+              </label>
+
+              <button class="btn btn--primary" type="submit">Send Message</button>
+
+              <p class="form__note">
+                I typically respond within 24–48 hours. For urgent matters, please mention it in your message.
+              </p>
+            </form>
+
+            <div class="side">
+              <div class="side__card">
+                <h3>Get in Touch</h3>
+                <p>
+                  Have a project in mind or want to discuss how data-driven insights can improve your marketing performance?
+                  I'd love to hear from you.
+                </p>
+              </div>
+
+              <div class="side__card">
+                <h3>Response Time</h3>
+                <p>
+                  I typically respond to inquiries within 24–48 hours. For urgent matters, please mention it in your message.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© <span id="year"></span> Davide Righetti. All rights reserved.</div>
+        <div class="footer__links">
+          <a href="#top">Home</a>
+          <a href="#services">Services</a>
+          <a href="#methodology">Methodology</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
