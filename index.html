@@ -23,12 +23,12 @@
       <a class="nav__cta" href="#contact">Get in touch</a>
     </nav>
 
-    <button class="burger" id="burger">
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" type="button">
       <span></span><span></span>
     </button>
   </div>
 
-  <div class="mobile" id="mobile">
+  <div class="mobile" id="mobile" aria-hidden="true">
     <div class="container mobile__inner">
       <a href="#what">What I Do</a>
       <a href="#about">About</a>
@@ -41,224 +41,265 @@
 
 <main id="top">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero__aurora"></div>
-  <div class="hero__grid"></div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__aurora" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
 
-  <div class="container hero__wrap reveal">
-    <h1 class="hero__title">
-      Digital Marketing &amp; Strategic Analysis<br>
-      in modern digital ecosystems.
-    </h1>
+    <div class="container hero__wrap reveal">
+      <h1 class="hero__title">
+        Digital Marketing &amp; Strategic Analysis<br />
+        in modern digital ecosystems.
+      </h1>
 
-    <p class="hero__sub">
-      A background in engineering and consulting, focused on building structured and performance-driven marketing systems in the AI era.
-    </p>
-
-    <a class="btn btn--primary" href="#contact">Get in touch</a>
-
-    <div class="hero__signature">
-      <span class="sigDot"></span>
-      <span class="sigDot sigDot--2"></span>
-      <span class="sigDot sigDot--3"></span>
-      <span class="sigLine"></span>
-    </div>
-  </div>
-</section>
-
-<div class="divider divider--cool"></div>
-
-<!-- WHAT I DO -->
-<section class="section" id="what">
-  <div class="aurora aurora--cool"></div>
-
-  <div class="container">
-    <div class="section__head reveal">
-      <h2>What I Do</h2>
-      <p class="lead">
-        Structured digital marketing, communication and strategic support, combining analytical approach with creative execution.
+      <p class="hero__sub">
+        A background in engineering and consulting, focused on building structured and performance-driven marketing systems in the AI era.
       </p>
-    </div>
 
-    <div class="grid">
-      <div class="card reveal">
-        <h3>Digital Marketing Strategy</h3>
-        <p>Market analysis, positioning, and offer design grounded in data and competitive insight.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contact">Get in touch</a>
       </div>
 
-      <div class="card reveal">
-        <h3>Performance &amp; KPI Analysis</h3>
-        <p>Definition, monitoring, and interpretation of performance indicators across digital channels.</p>
-      </div>
-
-      <div class="card reveal">
-        <h3>Copywriting &amp; Communication</h3>
-        <p>Strategic messaging, content structure, and communication design aligned with brand and objectives.</p>
-      </div>
-
-      <div class="card reveal">
-        <h3>Paid Media &amp; Growth Channels</h3>
-        <p>Meta advertising, affiliate programs, and performance-driven campaign management.</p>
-      </div>
-
-      <div class="card reveal">
-        <h3>Corporate &amp; Technology Consulting (Marketing-Oriented)</h3>
-        <p>Experience working within complex corporate environments, bridging technology, data, and marketing decision-making.</p>
+      <div class="hero__signature" aria-hidden="true">
+        <span class="sigDot"></span>
+        <span class="sigDot sigDot--2"></span>
+        <span class="sigDot sigDot--3"></span>
+        <span class="sigLine"></span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="divider divider--warm"></div>
+  <div class="divider divider--cool" aria-hidden="true"></div>
 
-<!-- ABOUT -->
-<section class="section section--alt" id="about">
-  <div class="aurora aurora--warm"></div>
+  <!-- WHAT I DO -->
+  <section class="section" id="what">
+    <div class="aurora aurora--cool" aria-hidden="true"></div>
 
-  <div class="container">
-    <div class="section__head reveal">
-      <h2>About Me</h2>
-    </div>
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>What I Do</h2>
+        <p class="lead">
+          Structured digital marketing, communication and strategic support, combining analytical approach with creative execution.
+        </p>
+      </div>
 
-    <div class="panel reveal">
-      <p>I'm Davide Righetti, a digital marketing analyst holding a Master’s degree in Management Engineering from Politecnico di Milano, with a specialization in Digital Business and Market Innovation.</p>
-
-      <p>After an initial professional experience as a Technology Consulting Analyst at Accenture S.p.A., one of the world’s leading consulting firms, I decided to fully apply both my corporate and academic background in a real-world, high-impact environment.</p>
-
-      <p>Over the years, I have worked across multiple areas of digital and marketing operations, including data analysis and cloud infrastructure (AWS Certified), copywriting and communication, social media strategy, Meta advertising, affiliate programs, talent campaigns, and content creation.</p>
-
-      <p>Having studied — and later applied professionally — digital business models at a time when these disciplines were still emerging allowed me to build practical experience early, translating theory into execution and delivering measurable results.</p>
-    </div>
-  </div>
-</section>
-
-<div class="divider divider--cool"></div>
-
-<!-- HOW I WORK -->
-<section class="section" id="work">
-  <div class="aurora aurora--cool"></div>
-
-  <div class="container">
-    <div class="section__head reveal">
-      <h2>How I Work</h2>
-      <p class="lead">A structured, analytical approach inspired by engineering and consulting methodologies.</p>
-    </div>
-
-    <div class="work reveal">
-      <div class="work__rail"></div>
-
-      <div class="workItem">
-        <div class="workBadge">01</div>
-        <div class="workCard">
-          <strong>Context &amp; Objectives</strong>
-          <p>Understanding business goals, market dynamics, and strategic constraints.</p>
+      <div class="grid">
+        <div class="card reveal">
+          <h3>Digital Marketing Strategy</h3>
+          <p>Market analysis, positioning, and offer design grounded in data and competitive insight.</p>
         </div>
-      </div>
 
-      <div class="workItem">
-        <div class="workBadge">02</div>
-        <div class="workCard">
-          <strong>Analysis &amp; Design</strong>
-          <p>Data analysis, KPI definition, and structured solution design.</p>
+        <div class="card reveal">
+          <h3>Performance &amp; KPI Analysis</h3>
+          <p>Definition, monitoring, and interpretation of performance indicators across digital channels.</p>
         </div>
-      </div>
 
-      <div class="workItem">
-        <div class="workBadge">03</div>
-        <div class="workCard">
-          <strong>Execution &amp; Optimization</strong>
-          <p>Implementation, monitoring, and continuous performance improvement.</p>
+        <div class="card reveal">
+          <h3>Copywriting &amp; Communication</h3>
+          <p>Strategic messaging, content structure, and communication design aligned with brand and objectives.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Paid Media &amp; Growth Channels</h3>
+          <p>Meta advertising, affiliate programs, and performance-driven campaign management.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Corporate &amp; Technology Consulting (Marketing-Oriented)</h3>
+          <p>Experience working within complex corporate environments, bridging technology, data, and marketing decision-making.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="divider divider--warm"></div>
+  <div class="divider divider--warm" aria-hidden="true"></div>
 
-<!-- EXPERTISE -->
-<section class="section section--alt" id="expertise">
-  <div class="aurora aurora--warm"></div>
+  <!-- ABOUT -->
+  <section class="section section--alt" id="about">
+    <div class="aurora aurora--warm" aria-hidden="true"></div>
 
-  <div class="container">
-    <div class="section__head reveal">
-      <h2>Areas of Expertise</h2>
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="panel reveal">
+        <p>
+          I'm Davide Righetti, a digital marketing analyst holding a Master’s degree in Management Engineering from Politecnico di Milano, with a specialization in Digital Business and Market Innovation.
+        </p>
+
+        <p>
+          After an initial professional experience as a Technology Consulting Analyst at Accenture S.p.A., one of the world’s leading consulting firms, I decided to fully apply both my corporate and academic background in a real-world, high-impact environment. This choice led me to focus entirely on digital marketing, continuing the same strategic and analytical stream developed during my academic path.
+        </p>
+
+        <p>
+          Over the years, I have worked across multiple areas of digital and marketing operations, including data analysis and cloud infrastructure (AWS Certified), copywriting and communication, social media strategy, Meta advertising, affiliate programs, talent campaigns, and content creation. Alongside execution, my work has consistently involved performance KPI definition, market and competitive analysis, design thinking, and offer positioning.
+        </p>
+
+        <p>
+          Having studied — and later applied professionally — digital business models at a time when these disciplines were still emerging, allowed me to build practical experience early, translating theory into execution and delivering measurable results in both marketing performance and strategic analysis.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <div class="expertise reveal">
-      <span class="chip">Digital Marketing Strategy</span>
-      <span class="chip">Performance &amp; KPI Frameworks</span>
-      <span class="chip">Data Analysis &amp; Reporting</span>
-      <span class="chip">Copywriting &amp; Messaging Strategy</span>
-      <span class="chip">Meta Advertising (Facebook &amp; Instagram)</span>
-      <span class="chip">Affiliate Program Management</span>
-      <span class="chip">Market &amp; Competitive Analysis</span>
-      <span class="chip">Design Thinking &amp; Offer Creation</span>
+  <div class="divider divider--cool" aria-hidden="true"></div>
+
+  <!-- HOW I WORK -->
+  <section class="section" id="work">
+    <div class="aurora aurora--cool" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>How I Work</h2>
+        <p class="lead">A structured, analytical approach inspired by engineering and consulting methodologies.</p>
+      </div>
+
+      <div class="work reveal">
+        <div class="work__rail" aria-hidden="true"></div>
+
+        <div class="workItem">
+          <div class="workBadge">01</div>
+          <div class="workCard">
+            <div class="workTitle">Context &amp; Objectives</div>
+            <div class="workText">Understanding business goals, market dynamics, and strategic constraints.</div>
+          </div>
+        </div>
+
+        <div class="workItem">
+          <div class="workBadge">02</div>
+          <div class="workCard">
+            <div class="workTitle">Analysis &amp; Design</div>
+            <div class="workText">Data analysis, KPI definition, and structured solution design.</div>
+          </div>
+        </div>
+
+        <div class="workItem">
+          <div class="workBadge">03</div>
+          <div class="workCard">
+            <div class="workTitle">Execution &amp; Optimization</div>
+            <div class="workText">Implementation, monitoring, and continuous performance improvement.</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="divider divider--cool"></div>
+  <div class="divider divider--warm" aria-hidden="true"></div>
 
-<!-- CONTACT -->
-<section class="section" id="contact">
-  <div class="aurora aurora--cool"></div>
+  <!-- EXPERTISE -->
+  <section class="section section--alt" id="expertise">
+    <div class="aurora aurora--warm" aria-hidden="true"></div>
 
-  <div class="container">
-    <div class="section__head reveal">
-      <h2>Get in Touch</h2>
-      <p class="lead">
-        If you’d like to discuss a project, explore a collaboration, or simply exchange perspectives on digital marketing and strategy, feel free to reach out.
-      </p>
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Areas of Expertise</h2>
+      </div>
+
+      <div class="expertise reveal">
+        <span class="chip">Digital Marketing Strategy</span>
+        <span class="chip">Performance &amp; KPI Frameworks</span>
+        <span class="chip">Data Analysis &amp; Reporting</span>
+        <span class="chip">Copywriting &amp; Messaging Strategy</span>
+        <span class="chip">Meta Advertising (Facebook &amp; Instagram)</span>
+        <span class="chip">Affiliate Program Management</span>
+        <span class="chip">Market &amp; Competitive Analysis</span>
+        <span class="chip">Design Thinking &amp; Offer Creation</span>
+      </div>
     </div>
+  </section>
 
-    <form class="form reveal"
-      action="mailto:davide.righetti.94@gmail.com?subject=Website%20Contact"
-      method="POST"
-      enctype="text/plain">
+  <div class="divider divider--cool" aria-hidden="true"></div>
 
-      <label><span>Name</span><input type="text" name="name"></label>
-      <label><span>Email</span><input type="email" name="email"></label>
-      <label><span>Message</span><textarea name="message" rows="6"></textarea></label>
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="aurora aurora--cool" aria-hidden="true"></div>
 
-      <button class="btn btn--primary">Send</button>
-      <p class="note">I typically respond within 24–48 hours.</p>
-    </form>
-  </div>
-</section>
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Get in Touch</h2>
+        <p class="lead">
+          If you’d like to discuss a project, explore a collaboration, or simply exchange perspectives on digital marketing and strategy, feel free to reach out.
+        </p>
+      </div>
 
-<!-- FOOTER -->
-<footer class="siteFooter">
-  <div class="footerTop">
-    <span>© <span id="year"></span> Davide Righetti</span>
+      <form
+        class="form reveal"
+        action="mailto:davide.righetti.94@gmail.com?subject=Website%20Contact"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" />
+        </label>
 
-    <div class="footerLinks">
-      <button class="footerLink" id="openPrivacy">Privacy Policy</button>
-      <span class="footerNote">No tracking · No profiling cookies</span>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" />
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6"></textarea>
+        </label>
+
+        <button class="btn btn--primary" type="submit">Send</button>
+        <p class="note">I typically respond within 24–48 hours.</p>
+      </form>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <!-- FOOTER (clean) -->
+  <footer class="siteFooter">
+    <div class="container footerTop">
+      <span>© <span id="year"></span> Davide Righetti</span>
+      <button class="footerLink" id="openPrivacy" type="button">Privacy Policy</button>
+    </div>
+  </footer>
 
 </main>
 
-<!-- PRIVACY MODAL -->
-<div class="privacyModal" id="privacyModal">
-  <div class="privacyBackdrop" id="closePrivacy"></div>
+<!-- PRIVACY MODAL (hidden until click) -->
+<div class="privacyModal" id="privacyModal" aria-hidden="true">
+  <div class="privacyBackdrop" id="closePrivacy" aria-hidden="true"></div>
 
-  <div class="privacyBox">
-    <button class="privacyClose" id="closePrivacyBtn">×</button>
+  <div class="privacyBox" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+    <button class="privacyClose" id="closePrivacyBtn" type="button" aria-label="Close">×</button>
 
     <div class="privacyContent">
       <h3>Privacy Policy</h3>
 
       <p>This website is owned and operated by Davide Righetti.</p>
-      <p>This website does not use tracking, profiling, or third-party cookies.</p>
-      <p>Personal data provided via email is used solely to reply and is not stored or shared.</p>
-      <p>You may request data deletion at any time by contacting davide.righetti.94@gmail.com.</p>
-      <p>This website is hosted on Cloudflare Pages for security and performance purposes.</p>
 
-      <p class="privacy-note">This website does not use tracking or profiling cookies.</p>
+      <p>
+        This website does not use tracking, profiling, or third-party cookies.
+        No analytics or advertising tools are installed.
+      </p>
+
+      <p>
+        If you choose to contact me via the contact form or email link, the personal data you voluntarily provide
+        (such as name, email address, and message content) will be used exclusively to respond to your inquiry.
+      </p>
+
+      <p>
+        Personal data is not stored in databases, shared with third parties, or used for marketing purposes.
+        Data is processed solely for communication and is retained only for the time necessary to reply.
+      </p>
+
+      <p>
+        You have the right to request access, rectification, or deletion of your personal data at any time
+        by contacting <strong>davide.righetti.94@gmail.com</strong>.
+      </p>
+
+      <p>
+        This website is hosted on Cloudflare Pages, which may process technical data (such as IP addresses)
+        solely for security, performance, and infrastructure purposes.
+      </p>
+
+      <p class="privacy-note">
+        This website does not use tracking or profiling cookies.
+      </p>
     </div>
   </div>
 </div>
