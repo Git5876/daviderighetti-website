@@ -539,3 +539,22 @@ textarea{ resize:vertical; }
   .burger{ display:flex; }
   .mobile.show{ display:block; }
 }
+/* --- FIX DEFINITIVO OVERFLOW LATERALE --- */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* forza il contenuto a restare centrato */
+body {
+  position: relative;
+}
+
+/* clippa qualsiasi effetto grafico che esca dallo schermo */
+.hero,
+.section,
+.divider {
+  overflow: hidden;
+}
